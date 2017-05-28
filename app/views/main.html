@@ -1,0 +1,19 @@
+<header class="pageHeader">{{pageHeader}}</header>
+         <div class="tableContainer">
+            <table id="stockContainer" class="table table-hover table-sm">
+               <thead class="thead-inverse">
+                  <tr>
+                     <th>Ticker</th>
+                     <th class = "text-right priceHeader">Price</th>
+                     <th class="text-center">Last Update</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr ng-repeat="stock in oStockList | orderBy: 'ticker'">
+                     <td title = "{{stock.ticker|uppercase}}" >{{stock.ticker|uppercase}}</td>
+                     <td title = "{{stock.price | number : 6}}" track-record = "stock.price" style = "background-color:{{newbgcolor}};color:{{newcolor}}" class = "text-right">{{stock.price | number : 2}}</td>
+                     <td title = "{{stock.lastUpdate}}" class="text-center">{{stock.formattedTime}}</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
