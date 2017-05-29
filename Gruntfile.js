@@ -427,7 +427,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:GhoshAbhijit/livestockapp.git',
+          remote: 'https://github.com/GhoshAbhijit/livestockapp.git',
           branch: 'gh-pages'
         }
       },
