@@ -26,4 +26,5 @@ table {
 @media screen and (max-width: 768px) {
   #stockContainer {
     width: 80%;
+	}
 }
