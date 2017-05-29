@@ -6,6 +6,10 @@ table {
     border-bottom: 0;
     padding: 10px;
 }
+.thead-inverse th {
+    color: #fff;
+    background-color: #292b2c;
+}
 .tableContainer {
     position: relative;
 }
@@ -18,7 +22,7 @@ table {
 .pageHeader {
     text-align: center;
     margin: 20px;
-    font-size: larger;
+    font-size: 26px;
 }
 
 
